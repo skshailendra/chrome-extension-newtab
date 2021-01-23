@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Welcome",
+  "version": "1.0",
+  "description": "Welcome Shailendra",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "author": "Shailendra",
+  "browser_action": {},
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newpage.html"
+  },
+  "permissions": ["tabs"]
+}
