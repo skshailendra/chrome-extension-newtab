@@ -18,7 +18,7 @@ const setMessage = () => {
   const name = document.getElementById("name");
   const quote = document.querySelector(".quote");
 
-  welcomeContainer.style.backgroundImage = `url("bg${getRandomNumber(
+  welcomeContainer.style.backgroundImage = `url("./images/bg${getRandomNumber(
     1,
     11
   )}.jpg")`;
