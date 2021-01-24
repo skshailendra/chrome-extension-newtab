@@ -1,5 +1,4 @@
 "use strict";
-const userName = "Shailendra";
 const greetings = {
   0: "Good Morning",
   1: "Good Afternoon",
