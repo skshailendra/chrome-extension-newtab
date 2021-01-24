@@ -11,7 +11,7 @@ const quoteMessage = "What is your main focus for today?";
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min) + min);
 };
-
+const next = document.querySelector(".next");
 const setMessage = () => {
   const welcomeContainer = document.querySelector(".welcome-container");
 
@@ -79,5 +79,5 @@ const myLocation = async function () {
 setMessage();
 updateTime();
 myLocation();
-
 setInterval(updateTime, 1000);
+next.addEventListener("click", setMessage);
