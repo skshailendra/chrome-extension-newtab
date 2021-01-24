@@ -24,5 +24,5 @@ Select the cloned project.
 That's it Enjoy......
 
 <p>
-<img src="/images/screenshot1.png"  height="200px">
+<img src="/images/screenshot1.PNG"  height="200px">
 </p>
