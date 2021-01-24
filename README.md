@@ -23,6 +23,6 @@ Click Load unpacked button.
 Select the cloned project.
 That's it Enjoy......
 
-<p>
-<img src="/images/screenshot1.PNG"  height="200px">
+<p align='center'>
+<img src="/images/screenshot1.PNG"  height="250px">
 </p>
