@@ -44,9 +44,9 @@ const updateTime = () => {
   greetingtime.innerText =
     datetime.getHours() > 0 && datetime.getHours() < 4
       ? `${greetings[3]}, `
-      : datetime.getHours() > 4 && datetime.getHours() < 12
+      : datetime.getHours() > 3 && datetime.getHours() < 12
       ? `${greetings[0]}, `
-      : datetime.getHours() > 12 && datetime.getHours() < 16
+      : datetime.getHours() > 11 && datetime.getHours() < 16
       ? `${greetings[1]}, `
       : `${greetings[2]}, `;
 
