@@ -58,6 +58,26 @@ const updateTime = () => {
     datetime
   );
 };
+const getPosition = function () {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+const myLocation = async function () {
+  const cityText = document.querySelector(".city");
+  const countryText = document.querySelector(".country");
+  const pos = await getPosition();
+  const { latitude: lat, longitude: lng } = pos?.coords;
+  const locateMe = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
+  const locateMyLocation = await locateMe.json();
+  const { country, city } = locateMyLocation;
+  cityText.innerHTML = `${city}, `;
+  countryText.innerHTML = country;
+};
+
 setMessage();
 updateTime();
+myLocation();
+
 setInterval(updateTime, 1000);

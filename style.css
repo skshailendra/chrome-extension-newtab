@@ -57,3 +57,9 @@ h2 {
   width: 300px;
   border: 1px solid #fff;
 }
+.location {
+  position: fixed;
+  left: 2rem;
+  bottom: 1.2rem;
+  font-size: 1.1rem;
+}
