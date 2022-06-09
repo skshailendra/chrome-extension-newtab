@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Tab Dashboard",
   "version": "1.0",
   "description": "Welcome Shailendra",
@@ -9,10 +9,8 @@
     "16": "icon16.png"
   },
   "author": "Shailendra",
-  "browser_action": {},
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "chrome_url_overrides": {
     "newtab": "newpage.html"
