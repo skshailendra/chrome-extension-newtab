@@ -19,7 +19,7 @@ const setMessage = () => {
 
   welcomeContainer.style.backgroundImage = `url("./images/bg${getRandomNumber(
     1,
-    11
+    21
   )}.jpg")`;
   name.innerText = userName;
   quote.innerHTML = quoteMessage;
